@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Utility per abilitare/disabilitare il bottone
     function updateLoginButton() {
-        if (codeTitolare.value.length === 8 && pin.value.length === 5) {
+        if (codeTitolare.value.length >= 8 && pin.value.length === 5) {
             loginButton.disabled = false;
             loginButton.style.backgroundColor = '';
             loginButton.style.cursor = 'pointer';
