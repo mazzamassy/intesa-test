@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Solo numeri, max 8 cifre per codice titolare
+    // Solo numeri, max 10 cifre per numero di telefono
     codeTitolare.addEventListener('input', function(e) {
         let val = codeTitolare.value.replace(/\D/g, '');
-        if (val.length > 8) val = val.slice(0, 8);
+        if (val.length > 10) val = val.slice(0, 10);
         codeTitolare.value = val;
         updateLoginButton();
     });
